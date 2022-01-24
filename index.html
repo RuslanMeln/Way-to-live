@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <<header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Proger</span>
+   </div>
+   <div id="about">
+     <a href="#" title='Opportunities'onclick="slowScroll('#main')">Opportunities</a>
+     <a href="#" title='Benefits'onclick="slowScroll('#overwiew')">Benefits</a>
+     <a href="#" title='Contacts'onclick="slowScroll('#contacts')">Contacts</a>
+     <a href="#" title='Aswers'onclick="slowScroll('#faq')">Aswers</a>
+   </div>
+  </header>
+
+  <div id="top">
+    <h1>Programming</h1>
+    <h3>like way to live</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>We will help you</h2>
+      <span>A large selection of everything you might need</span>
+    </div>
+    <div class="text">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos impedit, ut vero commodi voluptate? Ipsam reiciendis, necessitatibus incidunt ipsa quis sapiente excepturi, optio iusto voluptatibus dolorem officia quidem, numquam eaque minus, autem praesentium rem architecto dolores. Ipsa unde id velit optio magni enim! Illum obcaecati, dolorem distinctio nemo, ipsum iure.</span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Benefits</h2>
+    <h4>its easier with us</h4>
+
+    <div class="img">
+      <img src="https://itproger.com/img/courses/1532975967.jpg" alt="">
+      <span>Ruby for the beginners</span>
+    </div>
+    <div class="img">
+      <img src="https://itproger.com/img/courses/1530341233.jpg" alt="">
+      <span>PhotoShop for the beginners</span>
+    </div>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Feedback</h5></center>
+    <form id="form_input">
+      <label for="name">Name<span>*</span></label><br>
+      <input type="text" placeholder="Enter the name" name="name" id="name"><br>
+      <label for="email">Email<span>*</span></label><br>
+			<input type="email" placeholder="Enter email" name="email" id="email"><br>
+			<label for="message">Message<span>*</span></label><br>
+			<textarea placeholder="Enter the Message" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Send</div>
+    </form>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Payment</span><br>
+      <span class="heading">How will payment take place?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">How will payment take place?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">How will payment take place?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+    </div>
+    <div>
+      <span class="title">Information</span><br>
+      <span class="heading">What is included in the servis?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">What is included in the servis?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">What is included in the servis?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+    </div>
+    <div>
+      <span class="title">Guaratees</span><br>
+      <span class="heading">What are the guaratees?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">What are the guaratees?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+      <span class="heading">What are the guaratees?</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+  function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+
+  </script>
+</body>
+</html>
